@@ -1,0 +1,55 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Programs • HopeBridge</title>
+  <meta name="description" content="Explore HopeBridge programs in education, food security, and health access." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html"><img src="https://dummyimage.com/72x72/0d9488/ffffff&text=HB" alt="Logo" /><span>HopeBridge</span></a>
+    <nav aria-label="Primary">
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="donate.html">Donate</a>
+      <a href="volunteer.html" class="btn inline">Volunteer</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section>
+    <h1>Programs</h1>
+    <p>We operate year‑round initiatives with measurable outcomes.</p>
+  </section>
+
+  <section class="grid-3">
+    <article class="card">
+      <h3>After‑School Tutoring</h3>
+      <p>Grades 3–12, twice weekly sessions with trained volunteers.</p>
+      <p><strong>Impact:</strong> +18% average math scores.</p>
+    </article>
+    <article class="card">
+      <h3>Community Food Hubs</h3>
+      <p>Fresh produce and staples; no‑ID, no‑barriers service model.</p>
+      <p><strong>Impact:</strong> 1,500 households served/month.</p>
+    </article>
+    <article class="card">
+      <h3>Mobile Health Clinics</h3>
+      <p>Screenings, vaccines, and referrals with partner providers.</p>
+      <p><strong>Impact:</strong> 1,200 visits/year.</p>
+    </article>
+  </section>
+</main>
+
+<footer>
+  <div class="container"><small>© <span id="year"></span> HopeBridge</small></div>
+</footer>
+<script src="script.js"></script>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>

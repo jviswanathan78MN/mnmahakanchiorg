@@ -1,0 +1,56 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Donate • HopeBridge</title>
+  <meta name="description" content="Support HopeBridge with a one-time or monthly donation." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html"><img src="https://dummyimage.com/72x72/0d9488/ffffff&text=HB" alt="Logo" /><span>HopeBridge</span></a>
+    <nav aria-label="Primary">
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="donate.html">Donate</a>
+      <a href="volunteer.html" class="btn inline">Volunteer</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="grid-2">
+    <div>
+      <h1>Donate</h1>
+      <p>Your gift fuels tutoring, meals, and healthcare access. Thank you for investing in opportunity.</p>
+      <div class="card">
+        <h3>Give Online</h3>
+        <p class="alert">Demo embed below. Replace with your payment provider.</p>
+        <div style="height:260px;display:grid;place-items:center;border:2px dashed #cbd5e1;border-radius:12px">
+          <p><strong>Donation Form Placeholder</strong><br/><small class="help">Embed code from Stripe/PayPal/Givebutter/Every.org</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Other Ways to Give</h3>
+      <ul>
+        <li><strong>Mail:</strong> 123 Main St, Eden Prairie, MN 55344</li>
+        <li><strong>Employer Match:</strong> Include our EIN 00‑0000000</li>
+        <li><strong>Stock/DAF:</strong> email finance@hopebridge.org</li>
+      </ul>
+      <h3>Transparency</h3>
+      <p>We publish our audited financials and Form 990 annually.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container"><small>© <span id="year"></span> HopeBridge</small></div>
+</footer>
+<script src="script.js"></script>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>

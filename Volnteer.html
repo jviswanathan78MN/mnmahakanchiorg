@@ -1,0 +1,70 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Volunteer • HopeBridge</title>
+  <meta name="description" content="Volunteer with HopeBridge and make a direct impact." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html"><img src="https://dummyimage.com/72x72/0d9488/ffffff&text=HB" alt="Logo" /><span>HopeBridge</span></a>
+    <nav aria-label="Primary">
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="donate.html">Donate</a>
+      <a href="volunteer.html" class="btn inline">Volunteer</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section>
+    <h1>Volunteer</h1>
+    <p>Sign up below and we’ll match you with opportunities that fit your skills and schedule.</p>
+  </section>
+
+  <section class="card">
+    <form id="volunteer-form" aria-describedby="v-help">
+      <div class="form-row">
+        <div>
+          <label for="firstName">First name</label>
+          <input id="firstName" name="firstName" required />
+        </div>
+        <div>
+          <label for="lastName">Last name</label>
+          <input id="lastName" name="lastName" required />
+        </div>
+      </div>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required />
+
+      <label for="skills">Skills / interests</label>
+      <input id="skills" name="skills" placeholder="Tutoring, logistics, translation…" />
+
+      <label for="availability">Availability</label>
+      <select id="availability" name="availability">
+        <option>Weekdays</option><option>Evenings</option><option>Weekends</option>
+      </select>
+
+      <label for="notes">Notes</label>
+      <textarea id="notes" name="notes" rows="4" placeholder="Anything we should know?"></textarea>
+
+      <small id="v-help" class="help">We respect your privacy. Your information is used only for volunteer coordination.</small>
+      <div style="margin-top:12px"><button class="btn" type="submit">Submit</button></div>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div class="container"><small>© <span id="year"></span> HopeBridge</small></div>
+</footer>
+<script src="script.js"></script>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
+``
